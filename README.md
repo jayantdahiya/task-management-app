@@ -15,12 +15,11 @@ A RESTful API for task management built with FastAPI and PostgreSQL.
 
 ### Using Docker (Recommended)
 
-1. Clone the repository (assuming it's hosted somewhere)
+1. Clone the repository
    ```bash
-   # git clone [https://github.com/jayantdahiya/task-management-app.git](https://github.com/jayantdahiya/task-management-app.git)
-   # cd task-management-app
+   git clone https://github.com/jayantdahiya/task-management-app.git
+   cd task-management-app
    ```
-   *(Or ensure you are in the project root directory created in Step 1)*
 
 2. Build and run with Docker Compose
    ```bash
@@ -37,7 +36,7 @@ A RESTful API for task management built with FastAPI and PostgreSQL.
 2. Create and activate a virtual environment (if not already done in Step 1)
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   source venv/bin/activate 
    ```
 
 3. Install dependencies

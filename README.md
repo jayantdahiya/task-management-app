@@ -17,7 +17,7 @@ A RESTful API for task management built with FastAPI and PostgreSQL.
 
 1. Clone the repository (assuming it's hosted somewhere)
    ```bash
-   # git clone [https://github.com/yourusername/task-management-app.git](https://github.com/yourusername/task-management-app.git)
+   # git clone [https://github.com/jayantdahiya/task-management-app.git](https://github.com/jayantdahiya/task-management-app.git)
    # cd task-management-app
    ```
    *(Or ensure you are in the project root directory created in Step 1)*

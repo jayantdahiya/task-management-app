@@ -9,15 +9,15 @@ from errors import validation_exception_handler, http_exception_handler
 
 app = FastAPI(title="Task Management API")
 
-# Create tables on startup
+# Set up database tables when the application starts
 @app.on_event("startup")
 def on_startup():
     SQLModel.metadata.create_all(engine)
 
-# Include routers
+# Register API routes
 app.include_router(auth.router, prefix="", tags=["Authentication"])
 app.include_router(tasks.router, prefix="", tags=["Tasks"])
 
-# Add error handlers
+# Handle errors
 app.add_exception_handler(RequestValidationError, validation_exception_handler)
 app.add_exception_handler(StarletteHTTPException, http_exception_handler) 
